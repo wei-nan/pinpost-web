@@ -21,71 +21,81 @@
 
   <main>
     <h1>隱私政策</h1>
-    <p class="updated">最後更新日期：2026 年 9 月</p>
+    <p class="updated">最後更新日期：2026 年 9 月 20 日</p>
 
     <p>
-      本隱私政策說明 PinPost（下稱「本 App」）如何處理你的資訊。
-      PinPost 是一個供個人使用的 iOS App，用來收集你透過 Instagram、Facebook、
-      Threads 分享的公開貼文資訊（例如餐廳、景點）。
+      本隱私政策說明 PinPost（下稱「本 App」或「我們」）如何收集、使用、儲存與保護你的個人資訊。
+      PinPost 是一款協助使用者收集與整理透過 Instagram、Facebook、Threads 分享之公開地點與貼文資訊（例如餐廳、景點、地標）的 iOS 應用程式。
     </p>
 
-    <h2>我們收集的資訊</h2>
-    <p>本 App 收集的資訊僅限於你主動操作產生的內容：</p>
+    <h2>一、我們收集的資訊</h2>
+    <p>本 App 僅收集為了提供登入、同步與收藏功能所必需之資訊：</p>
     <ul>
-      <li>你透過系統分享功能，主動傳送給 PinPost 的貼文網址（Instagram / Facebook / Threads）</li>
-      <li>你在 App 內對該筆收藏手動輸入的備註文字（若有填寫）</li>
+      <li>
+        <strong>帳號與認證資料</strong>：當你使用「Sign in with Apple」或「Google 登入」時，透過 Firebase Authentication 驗證身分。我們接收並儲存你的唯一使用者識別碼（User ID / UID），以及你在授權登入時同意提供的電子郵件地址（Email）。使用 Apple 登入時，你亦可選擇「隱藏我的電子郵件」提供轉寄信箱。我們絕不會要求或存取你的社群平台帳號密碼。
+      </li>
+      <li>
+        <strong>收藏內容與使用者資料</strong>：包含你透過 iOS 系統分享擴充功能（Share Extension）或手動貼上之社群貼文公開網址、解析所得之店名、地址與公開縮圖，以及你手動編輯的筆記文字、照片附件與分類標籤（如餐廳、景點）。
+      </li>
+      <li>
+        <strong>廣告與裝置識別資訊</strong>：本 App 整合 Google Mobile Ads (AdMob) 提供廣告服務。在取得你的 iOS App Tracking Transparency (ATT) 授權後，廣告服務可能存取裝置的廣告識別碼（IDFA）以提供個人化廣告。若你未授權或選擇要求 App 不要追蹤，廣告服務僅會展示非個人化廣告。
+      </li>
     </ul>
+
+    <h2>二、我們如何使用這些資訊</h2>
+    <p>收集之資訊僅用於下列目的：</p>
+    <ul>
+      <li><strong>核心功能提供</strong>：解析公開貼文網址、啟發式識別餐廳/景點名稱與地址，並呈現於清單與地圖總覽中。</li>
+      <li><strong>雲端跨裝置同步</strong>：將你的收藏與個人筆記安全保存至雲端資料庫（Cloud Firestore），使你在不同 iOS 裝置間登入同一帳號時保持收藏同步。</li>
+      <li><strong>廣告與服務維運</strong>：透過廣告展示獲取維護伺服器與基礎架構所需的資源。</li>
+    </ul>
+
+    <h2>三、資料儲存、保存與刪除</h2>
     <p>
-      本 App <strong>不會</strong>要求你登入 Instagram、Facebook 或 Threads 帳號，
-      也不會存取你的帳號資料、好友名單、私訊或任何非公開內容。
+      <strong>儲存位置</strong>：你的帳號與收藏資料安全儲存在 Google Cloud Platform / Firebase Firestore 雲端資料庫中，並在你的本機裝置上保留鏡像快取，以支援離線檢視與即時存取。
+    </p>
+    <p>
+      <strong>資料保存與刪除權益</strong>：
+    </p>
+    <ul>
+      <li><strong>單筆刪除</strong>：你可隨時在 App 內左滑或點選刪除任何一筆收藏，系統會同步自雲端資料庫與本機徹底刪除。</li>
+      <li><strong>帳號與全部資料刪除</strong>：你可以在 App 內的「設定」頁面中提出刪除帳號請求。一旦確認刪除帳號，該帳號於認證系統中的記錄以及關聯於 Firestore 的所有收藏、筆記及資料庫記錄將全數被永久清除。</li>
+    </ul>
+
+    <h2>四、第三方服務與資料分享</h2>
+    <p>除了提供上述核心功能所必須之協力廠商外，我們絕不會將你的個人資料販售或提供給任何無關第三方：</p>
+    <ul>
+      <li>
+        <strong>Firebase（Google LLC）</strong>：提供身分驗證（Firebase Authentication）與雲端資料庫儲存（Cloud Firestore）。適用 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 隱私權政策</a>。
+      </li>
+      <li>
+        <strong>Google AdMob（Google LLC）</strong>：提供廣告展示服務。適用 <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google 廣告隱私權政策</a>。
+      </li>
+      <li>
+        <strong>公開網頁解析</strong>：當你分享貼文網址時，PinPost 後端伺服器僅會讀取該公開網址對應之公開網頁 Open Graph 中繼標籤，不包含任何你的個人社群帳號資訊。
+      </li>
+    </ul>
+
+    <h2>五、使用者追蹤權限（App Tracking Transparency）</h2>
+    <p>
+      在 iOS 14.5 及以上版本中，App 會在適當時機跳出系統提示詢問追蹤授權。你可自由選擇是否允許追蹤。若拒絕，App 的核心功能（包含貼文收集、地點識別、地圖瀏覽與同步）均不受任何影響。你亦可隨時至 iOS「設定」>「隱私權與安全性」>「追蹤」中修改此權限。
     </p>
 
-    <h2>我們如何使用這些資訊</h2>
+    <h2>六、兒童隱私</h2>
     <p>
-      當你分享一則貼文網址給 PinPost 時，App 會把這個網址傳送到 PinPost 自己的
-      後端伺服器；該伺服器接著透過 Meta 官方提供的
-      <a href="https://developers.facebook.com/docs/features-reference/oembed-read/" target="_blank" rel="noopener">oEmbed API</a>
-      查詢該則「公開貼文」的基本資訊（作者名稱、說明文字、縮圖網址），
-      並回傳給 App 顯示。這個過程只讀取貼文公開頁面本身已經公開顯示的資訊。
+      本 App 並非針對 13 歲（或當地法定兒童年齡）以下之兒童設計，我們不會刻意收集兒童的個人資訊。
     </p>
 
-    <h2>資料儲存方式</h2>
+    <h2>七、政策異動</h2>
     <p>
-      解析後的貼文資訊（含你手動加入的備註）儲存在你自己裝置本機的資料庫中，
-      透過 iOS App Group 在 PinPost 主程式與其分享擴充功能（Share Extension）之間
-      共用，<strong>不會上傳到任何雲端帳號系統，也不會用於廣告投放或提供給
-      第三方進行分析</strong>。你可以隨時在 App 內刪除任一筆收藏，或直接移除
-      整個 App 以清除所有本機資料。
+      本隱私政策可能因法規變更或功能增修而不定期更新。更新後的新版本將公布於本網頁，並更新上方的最後更新日期。
     </p>
 
-    <h2>第三方服務</h2>
+    <h2>八、聯絡我們</h2>
     <p>
-      本 App 唯一會聯繫的第三方服務是 Meta 官方的 oEmbed API（用於解析你分享的
-      公開貼文）。該請求僅包含你分享的貼文網址，不包含你的個人身分資訊。
-      Meta 如何處理該請求，適用
-      <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">Meta 隱私政策</a>。
-    </p>
-    <p>
-      PinPost 的後端伺服器目前僅由開發者本人於私人網路環境中架設與存取，
-      伺服器可能為除錯目的暫時記錄請求（例如發生錯誤時），此紀錄僅供排除
-      技術問題使用，不會另作他用。
-    </p>
-
-    <h2>兒童隱私</h2>
-    <p>
-      本 App 非針對兒童設計，也不會刻意收集兒童的個人資訊。
-    </p>
-
-    <h2>政策異動</h2>
-    <p>
-      若本政策內容有所異動，我們會更新本頁面上方的「最後更新日期」。
-    </p>
-
-    <h2>聯絡我們</h2>
-    <p>
-      如對本政策或 PinPost 的資料處理方式有任何問題，歡迎透過
+      如對本隱私政策或個人資料處理方式有任何疑問、建議或行使權利需求，歡迎透過
       <a href="https://github.com/wei-nan/pinpost-ios/issues" target="_blank" rel="noopener">GitHub Issues</a>
-      與我們聯絡。
+      與我們聯繫。
     </p>
   </main>
 
