@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>隱私政策 — PinPost</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="brand" href="/">
+        <span class="brand-mark"></span>
+        PinPost
+      </a>
+      <div>
+        <a class="link" href="/">首頁</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>隱私政策</h1>
+    <p class="updated">最後更新日期：2026 年 9 月</p>
+
+    <p>
+      本隱私政策說明 PinPost（下稱「本 App」）如何處理你的資訊。
+      PinPost 是一個供個人使用的 iOS App，用來收集你透過 Instagram、Facebook、
+      Threads 分享的公開貼文資訊（例如餐廳、景點）。
+    </p>
+
+    <h2>我們收集的資訊</h2>
+    <p>本 App 收集的資訊僅限於你主動操作產生的內容：</p>
+    <ul>
+      <li>你透過系統分享功能，主動傳送給 PinPost 的貼文網址（Instagram / Facebook / Threads）</li>
+      <li>你在 App 內對該筆收藏手動輸入的備註文字（若有填寫）</li>
+    </ul>
+    <p>
+      本 App <strong>不會</strong>要求你登入 Instagram、Facebook 或 Threads 帳號，
+      也不會存取你的帳號資料、好友名單、私訊或任何非公開內容。
+    </p>
+
+    <h2>我們如何使用這些資訊</h2>
+    <p>
+      當你分享一則貼文網址給 PinPost 時，App 會把這個網址傳送到 PinPost 自己的
+      後端伺服器；該伺服器接著透過 Meta 官方提供的
+      <a href="https://developers.facebook.com/docs/features-reference/oembed-read/" target="_blank" rel="noopener">oEmbed API</a>
+      查詢該則「公開貼文」的基本資訊（作者名稱、說明文字、縮圖網址），
+      並回傳給 App 顯示。這個過程只讀取貼文公開頁面本身已經公開顯示的資訊。
+    </p>
+
+    <h2>資料儲存方式</h2>
+    <p>
+      解析後的貼文資訊（含你手動加入的備註）儲存在你自己裝置本機的資料庫中，
+      透過 iOS App Group 在 PinPost 主程式與其分享擴充功能（Share Extension）之間
+      共用，<strong>不會上傳到任何雲端帳號系統，也不會用於廣告投放或提供給
+      第三方進行分析</strong>。你可以隨時在 App 內刪除任一筆收藏，或直接移除
+      整個 App 以清除所有本機資料。
+    </p>
+
+    <h2>第三方服務</h2>
+    <p>
+      本 App 唯一會聯繫的第三方服務是 Meta 官方的 oEmbed API（用於解析你分享的
+      公開貼文）。該請求僅包含你分享的貼文網址，不包含你的個人身分資訊。
+      Meta 如何處理該請求，適用
+      <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">Meta 隱私政策</a>。
+    </p>
+    <p>
+      PinPost 的後端伺服器目前僅由開發者本人於私人網路環境中架設與存取，
+      伺服器可能為除錯目的暫時記錄請求（例如發生錯誤時），此紀錄僅供排除
+      技術問題使用，不會另作他用。
+    </p>
+
+    <h2>兒童隱私</h2>
+    <p>
+      本 App 非針對兒童設計，也不會刻意收集兒童的個人資訊。
+    </p>
+
+    <h2>政策異動</h2>
+    <p>
+      若本政策內容有所異動，我們會更新本頁面上方的「最後更新日期」。
+    </p>
+
+    <h2>聯絡我們</h2>
+    <p>
+      如對本政策或 PinPost 的資料處理方式有任何問題，歡迎透過
+      <a href="https://github.com/wei-nan/pinpost-ios/issues" target="_blank" rel="noopener">GitHub Issues</a>
+      與我們聯絡。
+    </p>
+  </main>
+
+  <footer>
+    &copy; 2026 PinPost · <a href="/">首頁</a>
+  </footer>
+</body>
+</html>
